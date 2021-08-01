@@ -1,0 +1,43 @@
+{
+  "name": "express-login-register-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -r dotenv/config src/index.js dotenv_config_path=.env.dev",
+    "lint": "eslint --fix src",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chayapath/express-login-register-api.git"
+  },
+  "author": "chayapath tuesakul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chayapath/express-login-register-api/issues"
+  },
+  "homepage": "https://github.com/chayapath/express-login-register-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "mocha": "^9.0.3",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
+  }
+}
